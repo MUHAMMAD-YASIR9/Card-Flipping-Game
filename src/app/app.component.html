@@ -1,0 +1,10 @@
+<div class="row">
+  <Label>
+    Enter Count to display cards for game
+  </Label>
+  <input type="number" [disabled]="openFlag" (focusout)="sendValue($event.target.value)">
+  <hr>
+  <div *ngIf="openFlag">
+    <app-card [Count]="cardCount"></app-card>
+  </div>
+</div>

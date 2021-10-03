@@ -1,0 +1,14 @@
+
+
+<div class="card" (click)="cardClicked(item)" *ngFor="let item of data" [@cardFlip]="item.state">
+    <div class="face back">
+        <div class="centered">
+            Up
+        </div>
+    </div>
+    <div class="face front">
+        <div class="centered">
+            Down
+        </div>
+    </div>
+</div>
